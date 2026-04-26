@@ -10,6 +10,8 @@ if(APPLE)
 elseif(UNIX)
     set(OpenMP_CXX_LIB_NAMES "gomp" "iomp5")
     set(OpenMP_CXX_FLAGS "-fopenmp")
+    set(OpenMP_gomp_LIBRARY "/usr/lib/x86_64-linux-gnu/libgomp.so.1")
+    set(OpenMP_iomp5_LIBRARY "/usr/lib/x86_64-linux-gnu/libiomp5.so.5")
 endif()
 
 project(CPULab9 CXX)
