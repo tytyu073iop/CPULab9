@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "configure",
+            "type": "shell",
+            "command": "cmake -B build",
+            "problemMatcher": ["$gcc"],
+            "group": "build"
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "cmake --build build",
+            "problemMatcher": ["$gcc"],
+            "group": "build"
+        },
+        {
+            "label": "configure and build",
+            "type": "shell",
+            "command": "cmake -B build && cmake --build build",
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "run main",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/src/main",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "rm -rf build",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug main (Linux)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/src/main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb"
+        },
+        {
+            "name": "Debug main (macOS)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/src/main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "Run main (Linux)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/src/main",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "gdb"
+        },
+        {
+            "name": "Run main (macOS)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/src/main",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "lldb"
+        }
+    ]
+}
