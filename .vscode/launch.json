@@ -44,6 +44,28 @@
             "cwd": "${workspaceFolder}",
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "Build and Run Current File (macOS)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/src/${fileBasenameNoExtension}",
+            "preLaunchTask": "configure and build",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "Build and Run Current File (Linux)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/src/${fileBasenameNoExtension}",
+            "preLaunchTask": "build",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "gdb"
         }
     ]
 }

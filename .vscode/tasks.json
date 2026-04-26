@@ -26,6 +26,23 @@
             }
         },
         {
+            "label": "build and run current file",
+            "type": "shell",
+            "command": "cmake --build build && ${workspaceFolder}/build/src/${fileBasenameNoExtension}",
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "run current file",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/src/${fileBasenameNoExtension}",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
             "label": "run main",
             "type": "shell",
             "command": "${workspaceFolder}/build/src/main",
